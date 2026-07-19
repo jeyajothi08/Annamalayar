@@ -15,7 +15,8 @@ dist-ssr
 .env.local
 .env.production
 backend/.env
-# database/
+database/*
+!database/schema.sql
 
 # Editor directories and files
 .vscode/*
