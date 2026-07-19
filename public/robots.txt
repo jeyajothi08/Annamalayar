@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://annamalaiyartowing.com/sitemap.xml
+Sitemap: https://annamalaiyarrecovery.in/sitemap.xml

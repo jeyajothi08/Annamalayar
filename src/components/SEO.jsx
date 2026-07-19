@@ -37,7 +37,7 @@ const SEO = ({
     }
 
     // 3. Set canonical link
-    const currentUrl = canonicalUrl || `https://annamalaiyartowing.com${location.pathname}`;
+    const currentUrl = canonicalUrl || `https://annamalaiyarrecovery.in${location.pathname}`;
     let linkCanonical = document.querySelector('link[rel="canonical"]');
     if (!linkCanonical) {
       linkCanonical = document.createElement('link');
@@ -52,7 +52,7 @@ const SEO = ({
       'og:description': ogDescription || description,
       'og:url': currentUrl,
       'og:type': ogType,
-      'og:image': ogImage || 'https://annamalaiyartowing.com/towing-team.png',
+      'og:image': ogImage || 'https://annamalaiyarrecovery.in/towing-team.png',
     };
 
     Object.entries(ogTags).forEach(([property, content]) => {
@@ -72,7 +72,7 @@ const SEO = ({
       'twitter:card': twitterCard,
       'twitter:title': ogTitle || title,
       'twitter:description': ogDescription || description,
-      'twitter:image': ogImage || 'https://annamalaiyartowing.com/towing-team.png',
+      'twitter:image': ogImage || 'https://annamalaiyarrecovery.in/towing-team.png',
       'twitter:url': currentUrl,
     };
 
