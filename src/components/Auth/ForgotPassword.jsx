@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { API_BASE_URL } from '../../config';
 import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, Key, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
 
@@ -27,7 +28,7 @@ const ForgotPassword = () => {
     setSuccess('');
 
     try {
-      const res = await fetch('/api/auth/forgot-password', {
+      const res = await fetch(`${API_BASE_URL}/api/auth/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email })
@@ -74,7 +75,7 @@ const ForgotPassword = () => {
     setSuccess('');
 
     try {
-      const res = await fetch('/api/auth/reset-password', {
+      const res = await fetch(`${API_BASE_URL}/api/auth/reset-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, token, newPassword })

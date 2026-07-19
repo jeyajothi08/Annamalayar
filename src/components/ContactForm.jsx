@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { API_BASE_URL } from '../config';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 const ContactForm = () => {
@@ -26,7 +27,7 @@ const ContactForm = () => {
     setStatus({ type: null, text: '' });
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch(`${API_BASE_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

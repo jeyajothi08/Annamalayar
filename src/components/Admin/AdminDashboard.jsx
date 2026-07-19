@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { API_BASE_URL } from '../../config';
 import { Shield, Users, MessageSquare, Star, CheckCircle, XCircle, Trash2, Mail, Phone, Car } from 'lucide-react';
 
 const AdminDashboard = () => {
@@ -40,7 +41,7 @@ const AdminDashboard = () => {
     setDataLoading(true);
     try {
       // 1. Fetch Reviews
-      const revRes = await fetch('/api/admin/reviews', {
+      const revRes = await fetch(`${API_BASE_URL}/api/admin/reviews`, {
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
       const revData = await revRes.json();
@@ -48,7 +49,7 @@ const AdminDashboard = () => {
       setReviews(loadedReviews);
 
       // 2. Fetch Users
-      const userRes = await fetch('/api/admin/users', {
+      const userRes = await fetch(`${API_BASE_URL}/api/admin/users`, {
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
       const userData = await userRes.json();
@@ -56,7 +57,7 @@ const AdminDashboard = () => {
       setUsers(loadedUsers);
 
       // 3. Fetch Contact Enquiries
-      const contactRes = await fetch('/api/admin/contacts', {
+      const contactRes = await fetch(`${API_BASE_URL}/api/admin/contacts`, {
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
       const contactData = await contactRes.json();
@@ -96,7 +97,7 @@ const AdminDashboard = () => {
   // Review Operations
   const handleApproveReview = async (reviewId) => {
     try {
-      const res = await fetch(`/api/admin/reviews/${reviewId}/approve`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/reviews/${reviewId}/approve`, {
         method: 'PUT',
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
@@ -113,7 +114,7 @@ const AdminDashboard = () => {
 
   const handleRejectReview = async (reviewId) => {
     try {
-      const res = await fetch(`/api/admin/reviews/${reviewId}/reject`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/reviews/${reviewId}/reject`, {
         method: 'PUT',
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
@@ -131,7 +132,7 @@ const AdminDashboard = () => {
   const handleDeleteReview = async (reviewId) => {
     if (!window.confirm('Are you sure you want to delete this review permanently?')) return;
     try {
-      const res = await fetch(`/api/admin/reviews/${reviewId}`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/reviews/${reviewId}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
@@ -150,7 +151,7 @@ const AdminDashboard = () => {
   const handleDeleteUser = async (userId) => {
     if (!window.confirm('Warning: Deleting this user will also delete all their reviews. Proceed?')) return;
     try {
-      const res = await fetch(`/api/admin/users/${userId}`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/users/${userId}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
@@ -169,7 +170,7 @@ const AdminDashboard = () => {
   const handleDeleteContact = async (contactId) => {
     if (!window.confirm('Delete this enquiry record?')) return;
     try {
-      const res = await fetch(`/api/admin/contacts/${contactId}`, {
+      const res = await fetch(`${API_BASE_URL}/api/admin/contacts/${contactId}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${adminToken}` }
       });
@@ -334,7 +335,7 @@ const AdminDashboard = () => {
                         {/* Uploaded Photo Link */}
                         {rev.photo_path && (
                           <div className="max-w-[120px] rounded-lg overflow-hidden border border-white/5 shadow">
-                            <img src={rev.photo_path} alt="Review vehicle attachment" className="w-full h-auto object-cover" />
+                            <img src={rev.photo_path.startsWith('http') ? rev.photo_path : `${API_BASE_URL}${rev.photo_path}`} alt="Review vehicle attachment" className="w-full h-auto object-cover" />
                           </div>
                         )}
                       </div>

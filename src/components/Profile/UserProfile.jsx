@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { API_BASE_URL } from '../../config';
 import { Star, ShieldCheck, CheckCircle2, AlertCircle, Upload, FileImage, Sparkles } from 'lucide-react';
 
 const UserProfile = () => {
@@ -68,7 +69,7 @@ const UserProfile = () => {
     }
 
     try {
-      const res = await fetch('/api/reviews', {
+      const res = await fetch(`${API_BASE_URL}/api/reviews`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { API_BASE_URL } from '../../config';
 import { Star, ShieldCheck, CheckCircle2, ChevronRight, ChevronLeft, Image as ImageIcon } from 'lucide-react';
 
 const Reviews = () => {
@@ -16,14 +17,14 @@ const Reviews = () => {
     setLoading(true);
     try {
       // 1. Fetch Stats
-      const statsRes = await fetch('/api/reviews/stats');
+      const statsRes = await fetch(`${API_BASE_URL}/api/reviews/stats`);
       if (statsRes.ok) {
         const statsData = await statsRes.json();
         setStats(statsData);
       }
 
       // 2. Fetch Paginated Reviews
-      const reviewsRes = await fetch(`/api/reviews?page=${pageNumber}&limit=5`);
+      const reviewsRes = await fetch(`${API_BASE_URL}/api/reviews?page=${pageNumber}&limit=5`);
       if (reviewsRes.ok) {
         const reviewsData = await reviewsRes.json();
         setReviews(reviewsData.reviews);
@@ -172,7 +173,7 @@ const Reviews = () => {
                     {rev.photo_path && (
                       <div className="rounded-xl overflow-hidden border border-white/5 max-w-sm max-h-[220px] shadow-md group">
                         <img
-                          src={rev.photo_path}
+                          src={rev.photo_path.startsWith('http') ? rev.photo_path : `${API_BASE_URL}${rev.photo_path}`}
                           alt={`${rev.customer_name}'s Tow Recovery`}
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                           loading="lazy"
