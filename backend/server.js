@@ -30,13 +30,23 @@ app.use(
 
 // CORS configuration
 const allowedOrigins = [
-  process.env.FRONTEND_URL || 'http://localhost:5173',
+  process.env.FRONTEND_URL,
+  'http://localhost:5173',
   'http://localhost:3000'
-];
+].filter(Boolean);
+
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      // Allow requests with no origin (like mobile apps or curl)
+      if (!origin) return callback(null, true);
+
+      const isAllowed = allowedOrigins.includes(origin) ||
+                        origin.endsWith('.onrender.com') ||
+                        origin.startsWith('http://localhost:') ||
+                        origin.startsWith('http://127.0.0.1:');
+
+      if (isAllowed) {
         callback(null, true);
       } else {
         callback(new Error('Blocked by CORS policy'));
