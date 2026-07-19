@@ -77,3 +77,31 @@
 .animate-pulse-soft {
   animation: soft-pulse 2s infinite;
 }
+
+/* Custom Input Field Utilities to resolve linter conflicts */
+.input-field {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+.input-field:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.input-field:focus {
+  border-color: #ff9f1c; /* accent color */
+  box-shadow: 0 0 0 1px #ff9f1c;
+  outline: none;
+}
+
+.input-field-danger {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+.input-field-danger:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.input-field-danger:focus {
+  border-color: #e71d36; /* danger color */
+  box-shadow: 0 0 0 1px #e71d36;
+  outline: none;
+}
+

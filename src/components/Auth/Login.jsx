@@ -38,7 +38,7 @@ const Login = () => {
 
   return (
     <main className="min-h-screen flex items-center justify-center pt-24 pb-12 bg-brand-primary px-4">
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-accent/5 to-transparent pointer-events-none"></div>
       
       <div className="w-full max-w-md glass-panel p-8 rounded-2xl border border-white/5 relative z-10">
         
@@ -76,7 +76,7 @@ const Login = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full bg-brand-secondary border border-white/10 hover:border-white/20 focus:border-accent focus:ring-1 focus:ring-accent rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-text-muted transition duration-200 outline-none"
+                className="w-full bg-brand-secondary input-field rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-text-muted"
                 required
               />
             </div>
@@ -100,7 +100,7 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="w-full bg-brand-secondary border border-white/10 hover:border-white/20 focus:border-accent focus:ring-1 focus:ring-accent rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-text-muted transition duration-200 outline-none"
+                className="w-full bg-brand-secondary input-field rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-text-muted"
                 required
               />
             </div>
@@ -110,7 +110,7 @@ const Login = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:bg-accent/60 text-brand-primary font-bold py-4 rounded-xl shadow-lg shadow-accent/15 cursor-pointer transition-all duration-200"
+            className="w-full flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 text-brand-primary font-bold py-4 rounded-xl shadow-lg shadow-accent/15 cursor-pointer transition-all duration-200"
           >
             {loading ? (
               <span>Signing In...</span>

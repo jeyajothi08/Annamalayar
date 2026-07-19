@@ -38,7 +38,7 @@ const AdminLogin = () => {
 
   return (
     <main className="min-h-screen flex items-center justify-center pt-24 pb-12 bg-brand-primary px-4">
-      <div className="absolute inset-0 bg-gradient-to-br from-danger/5 to-transparent pointer-events-none"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-danger/5 to-transparent pointer-events-none"></div>
 
       <div className="w-full max-w-md glass-panel p-8 rounded-2xl border border-danger/10 relative z-10">
         
@@ -79,7 +79,7 @@ const AdminLogin = () => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 placeholder="Username"
-                className="w-full bg-brand-secondary border border-white/10 hover:border-white/20 focus:border-danger focus:ring-1 focus:ring-danger rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-text-muted transition duration-200 outline-none"
+                className="w-full bg-brand-secondary input-field-danger rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-text-muted"
                 required
               />
             </div>
@@ -98,7 +98,7 @@ const AdminLogin = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="w-full bg-brand-secondary border border-white/10 hover:border-white/20 focus:border-danger focus:ring-1 focus:ring-danger rounded-xl pl-12 pr-4 py-3.5 text-white placeholder-text-muted transition duration-200 outline-none"
+                className="w-full bg-brand-secondary input-field-danger rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-text-muted"
                 required
               />
             </div>
@@ -108,7 +108,7 @@ const AdminLogin = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full flex items-center justify-center gap-2 bg-danger hover:bg-danger-hover disabled:bg-danger/60 text-white font-bold py-4 rounded-xl shadow-lg shadow-danger/15 cursor-pointer transition-all duration-200"
+            className="w-full flex items-center justify-center gap-2 bg-danger hover:bg-danger-hover disabled:opacity-60 text-white font-bold py-4 rounded-xl shadow-lg shadow-danger/15 cursor-pointer transition-all duration-200"
           >
             {loading ? (
               <span>Authorizing Admin...</span>

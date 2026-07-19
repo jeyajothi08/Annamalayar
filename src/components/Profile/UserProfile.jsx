@@ -202,7 +202,7 @@ const UserProfile = () => {
                 value={vehicleModel}
                 onChange={(e) => setVehicleModel(e.target.value)}
                 placeholder="e.g. Maruti Suzuki Swift / Honda Activa"
-                className="w-full bg-brand-secondary border border-white/10 hover:border-white/20 focus:border-accent focus:ring-1 focus:ring-accent rounded-xl px-4 py-3.5 text-white placeholder-text-muted transition duration-200 outline-none"
+                className="w-full bg-brand-secondary input-field rounded-xl px-4 py-3.5 text-white placeholder:text-text-muted"
                 required
               />
             </div>
@@ -218,7 +218,7 @@ const UserProfile = () => {
                 onChange={(e) => setReviewText(e.target.value)}
                 rows={5}
                 placeholder="Describe your roadside experience. E.g., The flatbed driver arrived in 20 minutes, handled the keys professionally, and towed my vehicle damage-free to Vandiyur..."
-                className="w-full bg-brand-secondary border border-white/10 hover:border-white/20 focus:border-accent focus:ring-1 focus:ring-accent rounded-xl px-4 py-3.5 text-white placeholder-text-muted transition duration-200 outline-none resize-none"
+                className="w-full bg-brand-secondary input-field rounded-xl px-4 py-3.5 text-white placeholder:text-text-muted resize-none"
                 required
               ></textarea>
             </div>
@@ -276,7 +276,7 @@ const UserProfile = () => {
             <button
               type="submit"
               disabled={formLoading}
-              className="w-full flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:bg-accent/60 text-brand-primary font-bold py-4 rounded-xl shadow-lg shadow-accent/15 cursor-pointer transition-all duration-200"
+              className="w-full flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 text-brand-primary font-bold py-4 rounded-xl shadow-lg shadow-accent/15 cursor-pointer transition-all duration-200"
             >
               {formLoading ? (
                 <span>Submitting feedback...</span>
