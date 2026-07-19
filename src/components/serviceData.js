@@ -1,10 +1,122 @@
 export const serviceData = {
-  'flatbed-car-towing': {
-    title: "Flatbed Car Towing",
-    slug: "flatbed-car-towing",
+  'car-towing-madurai': {
+    title: "Car Towing in Madurai",
+    slug: "car-towing-madurai",
     iconName: "Truck",
     heroImage: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1600",
-    description: "Safely transport luxury cars, sports cars, electric vehicles, automatic transmission vehicles, and accident-damaged vehicles using hydraulic flatbed towing. Our state-of-the-art flatbed trailers ensure that your premium vehicle is lifted entirely off the ground, eliminating drivetrain wear and risk of road debris damage during transit.",
+    description: "Affordable and prompt car towing services in Madurai. Stationed in Melamadai, our tow trucks cover Vandiyur, Mattuthavani, and nearby national highways (NH-45, NH-7) within 20 minutes.",
+    detailedDescription: "For standard commuter cars, hatchbacks, and local breakdowns, our Madurai car towing service provides the fastest response. We station towing wreckers at strategic checkpoints around Madurai city, ensuring that we reach your breakdown location in under 20 minutes. Whether you are stuck in heavy traffic at Mattuthavani, near the Ring Road, or at home in Melamadai, our operators will safely secure your vehicle and tow it to your preferred dealership or local garage. We offer flat-rate local pricing with no hidden charges, making us the most reliable choice for car towing in Madurai.",
+    features: [
+      { title: "20-Min Local Dispatch", desc: "Stationed around key Madurai hubs for emergency quick response." },
+      { title: "Damage-Free Towing", desc: "Cushioned wheel grid lifts and soft straps protect your car's alignment." },
+      { title: "Transparent Pricing", desc: "No hidden charges; fixed price shared before our driver is dispatched." },
+      { title: "Multi-Brand Service", desc: "Towing support for Maruti Suzuki, Hyundai, Tata, Mahindra, and all imports." },
+      { title: "Bypass & Highway Rescue", desc: "Quick dispatch to Madurai bypass roads and national highways." },
+      { title: "Secure Parking Facility", desc: "Overnight secure storage if workshops are closed at the time of towing." },
+      { title: "Insurance Documentation", desc: "We provide proper towing bills and paperwork for insurance claim approval." }
+    ],
+    gallery: [
+      { src: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=600", title: "Car Towing Mattuthavani" },
+      { src: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=600", title: "Towing in Melamadai" },
+      { src: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=600", title: "Car Towing Madurai Bypass" },
+      { src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=600", title: "Secure Car Lift" },
+      { src: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=600", title: "Local Wrecker Fleet" }
+    ],
+    benefits: [
+      { title: "Fastest Madurai Response", desc: "Our localized fleet guarantees we reach you quicker than anyone else." },
+      { title: "Experienced Drivers", desc: "Operators who know Madurai routes, bypass roads, and workshops inside out." },
+      { title: "Damage-Free Promise", desc: "We use modern wheel-lifts and tire tie-downs to secure your vehicle." },
+      { title: "24/7 Availability", desc: "Our emergency call center is awake and ready to dispatch all night." }
+    ],
+    process: [
+      { step: "01", title: "Call Hotline", desc: "Dial +91 95855 87999 and share your exact location in Madurai." },
+      { step: "02", title: "Get Fixed Quote", desc: "We calculate the exact distance and provide a fixed transparent quote." },
+      { step: "03", title: "Wrecker Dispatch", desc: "The nearest towing operator is immediately dispatched via GPS." },
+      { step: "04", title: "Secure Loading", desc: "The vehicle is hooked up damage-free using professional wheel grids." },
+      { step: "05", title: "Drop & Handover", desc: "Delivered safely to your preferred mechanic or home address." }
+    ],
+    faqs: [
+      { 
+        q: "What is your average response time inside Madurai city?", 
+        a: "Our average dispatch response time inside Madurai urban limits (such as Melamadai, Mattuthavani, Anna Nagar, and Goripalayam) is 15 to 25 minutes depending on traffic." 
+      },
+      { 
+        q: "Do you tow vehicles to workshops outside Madurai?", 
+        a: "Yes, we can tow your vehicle to any city or service center outside Madurai. Please refer to our Long Distance Towing service for long-haul details." 
+      },
+      { 
+        q: "Can you help with insurance paperwork?", 
+        a: "Yes, we provide valid commercial GST towing bills and vehicle loading photos, which are fully accepted by all major car insurance companies for reimbursement." 
+      }
+    ],
+    reviews: [
+      { name: "P. Srinivasan", rating: 5, date: "2026-06-05", vehicle: "Maruti Swift", comment: "Outstanding local service. Broke down near Mattuthavani bus stand, and their tow truck arrived in exactly 18 minutes. Towed my car safely to the service center. Highly recommend!", verified: true },
+      { name: "Nandhini G.", rating: 5, date: "2026-07-12", vehicle: "Honda City", comment: "Very polite staff and clean tow trucks. They helped move my car from a narrow street in Melamadai without hitting any walls. Rates were very reasonable.", verified: true },
+      { name: "Muthu Kumar", rating: 5, date: "2026-07-18", vehicle: "Tata Nexon", comment: "Broke down late at night on the bypass. Friendly crew arrived quickly and towed us to a nearby workshop safely. Very reliable.", verified: true }
+    ]
+  },
+  'bike-towing-madurai': {
+    title: "Bike Towing in Madurai",
+    slug: "bike-towing-madurai",
+    iconName: "Bike",
+    heroImage: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=1600",
+    description: "Professional, scratch-free motorcycle and scooter towing in Madurai. Equipped with specialized loading ramps, vertical wheel-lock cradles, and soft tie-downs for ultimate safety.",
+    detailedDescription: "Towing a motorcycle or scooter incorrectly can bend handlebars, snap clutch levers, or scratch premium paintwork. We do not use crude rope towing. Our two-wheeler towing service in Madurai utilizes custom loading ramps, front-wheel lock cradles, and premium soft-fabric straps. The bike is locked in an upright position on our platform, preventing any tipping or movement during transit. This service is ideal for superbikes, gearless scooters, and electric bikes with locked rear hubs.",
+    features: [
+      { title: "Front Wheel Lock Cradle", desc: "Ensures the motorcycle stands completely vertical and stable without side-stand load." },
+      { title: "Soft Fabric Tie-Downs", desc: "Secures the chassis at triple points using soft straps to avoid chrome scratching." },
+      { title: "Low-Slope Load Ramp", desc: "Easy loading of heavy cruisers (Harleys, Royal Enfields) and low scooters." },
+      { title: "EV Two-Wheeler Support", desc: "Safely transports electric scooters with dead batteries and locked hub motors." },
+      { title: "Accident Bike Retrieval", desc: "Loading and securing of bikes with broken forks or steering blocks." },
+      { title: "Scratch-Free Guarantee", desc: "No metal-on-metal contacts; all points cushioned with industrial rubber." },
+      { title: "Double Bike Loading", desc: "Capable of transporting two bikes simultaneously for friends travelling together." }
+    ],
+    gallery: [
+      { src: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=600", title: "Superbike Locked in Position" },
+      { src: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600", title: "Premium Motorcycle Loading" },
+      { src: "https://images.unsplash.com/photo-1449490126689-09c217baa807?auto=format&fit=crop&q=80&w=600", title: "Scooter Secured in Van" },
+      { src: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=600", title: "Electric Scooter Load" },
+      { src: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=600", title: "Secure Bike Offload" }
+    ],
+    benefits: [
+      { title: "Scratch-Free Guarantee", desc: "Cushioned points and soft straps ensure zero paint rub or fork scratches." },
+      { title: "Safe Vertical Loading", desc: "No fluid leaks (petrol/coolant) since the bike is kept upright." },
+      { title: "Fast City Response", desc: "Quick dispatch of compact bike-towers through heavy city traffic." },
+      { title: "Affordable Two-Wheeler Rates", desc: "Reasonably priced local packages for scooters and commuter bikes." }
+    ],
+    process: [
+      { step: "01", title: "Details Logged", desc: "Request details: bike model (Cruiser, Superbike, Scooter) and steering status." },
+      { step: "02", title: "Bike Wrecker Dispatch", desc: "A specialized pickup or small carrier with wheel-lock mounts is dispatched." },
+      { step: "03", title: "Ramp Loading & Wheel Lock", desc: "The bike is wheeled up the ramp; front tire is locked in the vertical clamp cradle." },
+      { step: "04", title: "Soft Strapping Sequence", desc: "Cushioned straps are fastened to handle triple points, keeping suspension slightly compressed." },
+      { step: "05", title: "Safe Drop-Off", desc: "Unstrapped carefully at the workshop or home address, verifying handle alignment." }
+    ],
+    faqs: [
+      { 
+        q: "Will you tie down my bike using metal hooks or ropes?", 
+        a: "Never. We use high-tensile polyester soft loop straps that wrap around the handlebars or frame. This eliminates any risk of scratching the paint, chrome, or cracking fairings." 
+      },
+      { 
+        q: "Can you tow electric scooters like Ola, Ather, or TVS iQube?", 
+        a: "Yes. Electric scooters can have locked wheels or disabled hubs when the battery dies. We load them using our low-angled ramp platform to avoid damage to the electric drivetrain." 
+      },
+      { 
+        q: "What if the steering lock is broken or jammed?", 
+        a: "No problem. We can secure bikes even with jammed steering columns or damaged forks. We use specialized wheel dollies to load the bike onto the carrier platform safely." 
+      }
+    ],
+    reviews: [
+      { name: "Prasanna Venkatesh", rating: 5, date: "2026-07-08", vehicle: "Royal Enfield Interceptor 650", comment: "Towing a heavy twin cylinder bike is tricky. Annamalaiyar's team brought a custom wheel-cradle carrier. Loaded it upright, strapped it down, and delivered it without a single scratch. Excellent service!", verified: true },
+      { name: "Shruthi S.", rating: 5, date: "2026-06-28", vehicle: "Ola S1 Pro (EV)", comment: "My Ola scooter screen froze and wheels locked. They loaded it using a neat low ramp. Perfect electric bike towing. Very affordable too.", verified: true },
+      { name: "Dinesh Kumar", rating: 5, date: "2026-07-02", vehicle: "Kawasaki Ninja Z900", comment: "Best superbike towing in Madurai. Front wheel clamp holds the bike rock-steady. Soft straps only, no metal hooks touching the tank. Highly recommended.", verified: true }
+    ]
+  },
+  'flatbed-towing': {
+    title: "Flatbed Towing",
+    slug: "flatbed-towing",
+    iconName: "Truck",
+    heroImage: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1600",
+    description: "Premium hydraulic flatbed towing. The safest way to transport luxury cars, low-clearance sports cars, and electric vehicles with zero drivetrain friction.",
     detailedDescription: "For premium, high-value, and delicate vehicles, standard tow methods simply won't suffice. Automatic transmissions, low-clearance sports cars, and electric vehicles require flatbed towing to prevent catastrophic drivetrain damage. Our hydraulic flatbeds tilt to a gentle angle, allowing even extremely low-slung supercars to slide on smoothly without scraping. Once positioned, we utilize soft-touch over-wheel harness straps that secure the tires directly to the bed without touching or scratching the custom alloy wheels or body paint. Whether you need local transport to a showroom in Madurai or long-distance vehicle delivery, our flatbed services guarantee absolute safety.",
     features: [
       { title: "Luxury Car Transport", desc: "Specialized handling for high-value luxury brands (BMW, Mercedes, Audi, Jaguar)." },
@@ -57,11 +169,11 @@ export const serviceData = {
     ]
   },
   'accident-recovery': {
-    title: "Accident & Recovery",
+    title: "Accident Recovery",
     slug: "accident-recovery",
     iconName: "ShieldAlert",
     heroImage: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&q=80&w=1600",
-    description: "Professional accident recovery for cars, SUVs, trucks, buses, and damaged vehicles using hydraulic recovery systems. Available 24/7/365 to handle emergency highway crash rescues, ditch retrievals, and rollovers.",
+    description: "Professional accident recovery and vehicle retrieval using heavy-duty wreckers, cranes, and winches. Safe extraction from ditches, canals, and highways.",
     detailedDescription: "When an unfortunate accident happens, you need a recovery service that acts fast, operates safely, and possesses the heavy-duty machinery required to extract compromised vehicles. Our accident recovery team is equipped with heavy-duty wreckers, powerful hydraulic winches, and recovery cranes. We handle everything from minor ditch slips to major highway pileups, vehicle rollovers, and waterlogging. Our crew coordinates with highway authorities to secure the site, preventing further accidents while we execute a calculated, damage-free recovery. We handle the vehicle with maximum care to avoid compounding structural damages.",
     features: [
       { title: "Hydraulic Winch Pulling", desc: "Dual heavy-duty winches with steel-braided cables for controlled vehicle extraction." },
@@ -111,6 +223,118 @@ export const serviceData = {
       { name: "Vikram Seth", rating: 5, date: "2026-07-10", vehicle: "Toyota Fortuner", comment: "My SUV slipped into a muddy ditch near the highway bypass. They arrived in 25 minutes, set up a winching rig, and pulled the massive car out without a single scratch on the bumper. Pure genius!", verified: true },
       { name: "P. Srinivasan", rating: 5, date: "2026-06-05", vehicle: "Maruti Swift", comment: "Had a bad crash at night. The response crew handled the vehicle cleanup and towing to the showroom so smoothly. Great support during a stressful time.", verified: true },
       { name: "Nandhini G.", rating: 5, date: "2026-07-12", vehicle: "Honda City", comment: "Highly professional team. They helped clear my locked vehicle from a busy highway crossing in under 20 minutes. Excellent safety standards.", verified: true }
+    ]
+  },
+  'roadside-assistance': {
+    title: "Roadside Assistance",
+    slug: "roadside-assistance",
+    iconName: "Wrench",
+    heroImage: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&q=80&w=1600",
+    description: "24/7 emergency roadside support. Quick mobile assistance for dead batteries, flat tyres, fuel delivery, keys locked inside, and minor mechanical fixes.",
+    detailedDescription: "A dead battery, a flat tyre, or running out of fuel shouldn't bring your entire trip to a halt. Our 24/7 Roadside Assistance (RSA) program is designed to get you back on the road in minutes. We deploy mobile technicians equipped with heavy-duty jump start boosters, tyre repair kits, and spare fuel containers. We arrive at your exact breakdown coordinate and resolve the problem on the spot. If the issue is complex (like a burnt alternator or broken clutch wire), we will coordinate immediate towing to the nearest authorized workshop, ensuring you are never stranded.",
+    features: [
+      { title: "Battery Jump Start", desc: "Heavy-duty 12V/24V jump-start booster packs to revive dead batteries instantly." },
+      { title: "Flat Tyre Puncture Repair", desc: "On-site tyre changing (mounting your stepney) or tubeless puncture plugging." },
+      { title: "Emergency Fuel Delivery", desc: "Delivery of up to 5 liters of petrol/diesel to help you reach the nearest station." },
+      { title: "Vehicle Lockout Assistance", desc: "Safe retrieval of keys locked inside the cabin without damaging door seals." },
+      { title: "Minor Mechanical Repairs", desc: "On-the-spot fixes for fuses, loose hoses, belt replacements, and wiring issues." },
+      { title: "Emergency Towing Backup", desc: "Instant dispatch of flatbed tow truck if the breakdown cannot be fixed on-site." },
+      { title: "Rapid Response Dispatch", desc: "Average ETA of 15-30 minutes across Madurai and adjacent bypass roads." }
+    ],
+    gallery: [
+      { src: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&q=80&w=600", title: "Engine Jump Start Setup" },
+      { src: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=600", title: "Flat Tyre Change Operation" },
+      { src: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&q=80&w=600", title: "Mobile Service Van" },
+      { src: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=600", title: "Emergency Fuel Fill" },
+      { src: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=600", title: "Stranded Driver Assistance" }
+    ],
+    benefits: [
+      { title: "24/7 Availability", desc: "Rain or shine, day or night, our mobile mechanics are always active." },
+      { title: "Experienced Techs", desc: "Technicians trained in multi-brand diagnostics and emergency overrides." },
+      { title: "Affordable Pricing", desc: "Flat service call-out fee with transparent pricing on parts and consumables." },
+      { title: "Fully Equipped Vans", desc: "Each response vehicle is stocked with basic fluids, fuses, and diagnostic readers." }
+    ],
+    process: [
+      { step: "01", title: "Breakdown Report", desc: "Call us and explain the issue: click sound on ignition, flat tyre, or fuel loss." },
+      { step: "02", title: "Technician Dispatched", desc: "The nearest mobile assistance rider or service van is dispatched via GPS routing." },
+      { step: "03", title: "On-Site Diagnostics", desc: "Technician arrives, inspects battery charge, tyre damage, or engine error codes." },
+      { step: "04", title: "On-The-Spot Fix", desc: "Problem is resolved (battery jump-started, tyre changed, or fuel filled)." },
+      { step: "05", title: "Test & Resume", desc: "System check to confirm vehicle is safe, and you resume your drive." }
+    ],
+    faqs: [
+      { 
+        q: "What happens if you cannot start my car on-site?", 
+        a: "If our technician cannot resolve the issue on the spot (due to mechanical failure or electronic block), we will immediately summon our flatbed tow truck to take your vehicle to a garage. You will only pay a discounted towing rate." 
+      },
+      { 
+        q: "Do you supply fuel if I run out completely?", 
+        a: "Yes, we deliver up to 5 liters of petrol or diesel in safety-compliant containers. The cost of fuel will be charged additionally at actual fuel station market rates." 
+      },
+      { 
+        q: "How long does a jump-start last?", 
+        a: "A jump-start provides enough power to start your engine. You must run the engine or drive the car for at least 30-45 minutes to let the alternator recharge the battery, or get it inspected at a shop." 
+      }
+    ],
+    reviews: [
+      { name: "Devi Prasad", rating: 5, date: "2026-07-01", vehicle: "Hyundai i20", comment: "My car battery died near Vandiyur at 11 PM. Called Annamalaiyar and their mechanic arrived in 15 minutes with a booster kit. Started in seconds! Extremely grateful.", verified: true },
+      { name: "Abhishek Jain", rating: 5, date: "2026-06-18", vehicle: "Honda Amaze", comment: "Got a double tyre puncture on the bypass road. The technician brought our spare to the shop, patched both tyres, came back, and mounted them. Lifesavers!", verified: true },
+      { name: "Meera Nair", rating: 5, date: "2026-07-14", vehicle: "Mahindra XUV300", comment: "Accidentally locked the keys inside. They unlocked the door using specialized air wedges in 5 minutes with zero scratches or glass damage.", verified: true }
+    ]
+  },
+  'heavy-vehicle-recovery': {
+    title: "Heavy Vehicle Recovery",
+    slug: "heavy-vehicle-recovery",
+    iconName: "ShieldCheck",
+    heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1600",
+    description: "Heavy commercial vehicle towing and recovery. Specialized equipment to pull loaded trucks, containers, construction machinery, and transport buses safely.",
+    detailedDescription: "Towing large commercial vehicles requires massive power, heavy-duty underlifts, and specialized brake-system knowledge. Our heavy commercial recovery fleet includes heavy-duty wreckers and multi-axle tow cranes. We can safely lift and pull loaded container trucks, intercity buses, cement mixers, and industrial loaders. Our technicians are experts in coupling heavy trailers, releasing air brakes manually, and securing heavy driveshafts to guarantee safe, long-haul commercial towing. We work closely with transport fleets and logistics companies for priority highway retrieval.",
+    features: [
+      { title: "Heavy Duty Underlift Towing", desc: "Hydraulic underlifts that lift the front axle of fully loaded semi-trucks easily." },
+      { title: "Commercial Bus Recovery", desc: "Low-clearance bus towing avoiding bumper damage or chassis bend." },
+      { title: "Trailer Coupling & Tow", desc: "Connecting and towing multi-axle trailers and commercial carriers." },
+      { title: "Industrial Crane Support", desc: "Heavy crane lifts for uprighting flipped heavy vehicles or loaded containers." },
+      { title: "Pneumatic Brake Connections", desc: "Securing truck air supply to allow rolling wheels with functioning brakes." },
+      { title: "High-Tension Winches", desc: "Heavy 30-ton capacity winches to pull trucks back onto highway surfaces." },
+      { title: "Priority Fleet Partnerships", desc: "Corporate contracts with logistics providers for highway breakdowns." }
+    ],
+    gallery: [
+      { src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600", title: "Semi Truck Wrecker Tow" },
+      { src: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600", title: "Commercial Fleet Support" },
+      { src: "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&q=80&w=600", title: "30-Ton Hydraulic Crane Lift" },
+      { src: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=600", title: "Highway Bus Salvage" },
+      { src: "https://images.unsplash.com/photo-1617400324478-f75f73943bb0?auto=format&fit=crop&q=80&w=600", title: "Night Industrial Towing" }
+    ],
+    benefits: [
+      { title: "30-Ton Pull Capacity", desc: "Heavy machinery designed for high tonnage commercial towing." },
+      { title: "Chassis Protection", desc: "Spreader beams and custom anchors to prevent trailer warping." },
+      { title: "Commercial Specialists", desc: "Crew experienced in heavy-vehicle air braking systems and axle disconnects." },
+      { title: "Fast Clearance", desc: "Clearing highway blockages quickly to prevent heavy commercial losses." }
+    ],
+    process: [
+      { step: "01", title: "Specifications Log", desc: "We record vehicle length, laden weight, loaded material, and axle conditions." },
+      { step: "02", title: "Heavy Wrecker Dispatch", desc: "A heavy-duty hydraulic wrecker or mobile crane is dispatched to the scene." },
+      { step: "03", title: "Brake & Axle Setup", desc: "Crew disconnects the driveshaft and hooks air hoses to release commercial spring brakes." },
+      { step: "04", title: "Underlift Mount", desc: "Heavy hydraulic underlift is positioned under the front axle and secured." },
+      { step: "05", title: "High-Weight Transport", desc: "The commercial truck is towed to a fleet garage or commercial vehicle workshop." }
+    ],
+    faqs: [
+      { 
+        q: "Can you tow a fully loaded 12-wheeler container truck?", 
+        a: "Yes, our heavy-duty wreckers are equipped with heavy hydraulic underlifts and dual winches capable of recovering and towing loaded multi-axle commercial vehicles." 
+      },
+      { 
+        q: "How do you release air brakes on a broken-down truck before towing?", 
+        a: "Our technicians connect the recovery truck's air compressor lines to the broken truck's air system to charge the tanks and release the parking brakes. If the air system is damaged, we manually cage the brake chambers." 
+      },
+      { 
+        q: "Do you offer priority service contracts for transport companies?", 
+        a: "Yes, we partner with logistics operators and bus companies to provide priority assistance, fixed rates, and credit billing for fleet operations." 
+      }
+    ],
+    reviews: [
+      { name: "P. Rangarajan (Fleet Mgr)", rating: 5, date: "2026-06-20", vehicle: "Ashok Leyland Container Truck", comment: "One of our loaded container trucks broke down on the bypass. Annamalaiyar's crew arrived with a massive recovery truck, bypassed the brakes, and towed it safely. Saved us thousands in delay penalties.", verified: true },
+      { name: "Suresh Balan", rating: 5, date: "2026-05-14", vehicle: "Volvo Intercity Bus", comment: "Exceptional work towing our commercial bus. They protected the lower frame and glass panels completely during the hookup. Very skilled operators.", verified: true },
+      { name: "Guru Transports", rating: 5, date: "2026-07-09", vehicle: "BharatBenz Tipper", comment: "Strongest towing equipment in Madurai. Clean lift, secure chains, and fast delivery to our workshop. Highly recommend their heavy recovery team.", verified: true }
     ]
   },
   'long-distance-towing': {
@@ -168,175 +392,5 @@ export const serviceData = {
       { name: "Sherin Mathew", rating: 5, date: "2026-07-05", vehicle: "Kia Seltos", comment: "Relocated my car from Madurai to Coimbatore during my transfer. Very clean execution, professional paperwork handling, and they delivered exactly on time.", verified: true },
       { name: "Rahul S.", rating: 5, date: "2026-05-30", vehicle: "Jeep Compass", comment: "Affordable rates compared to other commercial car carriers. Outstanding customer support throughout the journey.", verified: true }
     ]
-  },
-  'roadside-assistance': {
-    title: "24/7 Roadside Assistance",
-    slug: "roadside-assistance",
-    iconName: "Wrench",
-    heroImage: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&q=80&w=1600",
-    description: "Immediate roadside assistance for battery jump start, flat tyre puncture, emergency fuel delivery, vehicle lockouts, and minor mechanical repairs. Stuck on the road? We come to you.",
-    detailedDescription: "A dead battery, a flat tyre, or running out of fuel shouldn't bring your entire trip to a halt. Our 24/7 Roadside Assistance (RSA) program is designed to get you back on the road in minutes. We deploy mobile technicians equipped with heavy-duty jump start boosters, tyre repair kits, and spare fuel containers. We arrive at your exact breakdown coordinate and resolve the problem on the spot. If the issue is complex (like a burnt alternator or broken clutch wire), we will coordinate immediate towing to the nearest authorized workshop, ensuring you are never stranded.",
-    features: [
-      { title: "Battery Jump Start", desc: "Heavy-duty 12V/24V jump-start booster packs to revive dead batteries instantly." },
-      { title: "Flat Tyre Puncture Repair", desc: "On-site tyre changing (mounting your stepney) or tubeless puncture plugging." },
-      { title: "Emergency Fuel Delivery", desc: "Delivery of up to 5 liters of petrol/diesel to help you reach the nearest station." },
-      { title: "Vehicle Lockout Assistance", desc: "Safe retrieval of keys locked inside the cabin without damaging door seals." },
-      { title: "Minor Mechanical Repairs", desc: "On-the-spot fixes for fuses, loose hoses, belt replacements, and wiring issues." },
-      { title: "Emergency Towing Backup", desc: "Instant dispatch of flatbed tow truck if the breakdown cannot be fixed on-site." },
-      { title: "Rapid Response Dispatch", desc: "Average ETA of 15-30 minutes across Madurai and adjacent bypass roads." }
-    ],
-    gallery: [
-      { src: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&q=80&w=600", title: "Engine Jump Start Setup" },
-      { src: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=600", title: "Flat Tyre Change Operation" },
-      { src: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&q=80&w=600", title: "Mobile Service Van" },
-      { src: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=600", title: "Emergency Fuel Fill" },
-      { src: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=600", title: "Stranded Driver Assistance" }
-    ],
-    benefits: [
-      { title: "24/7 Availability", desc: "Rain or shine, day or night, our mobile mechanics are always active." },
-      { title: "Experienced Techs", desc: "Technicians trained in multi-brand diagnostics and emergency overrides." },
-      { title: "Affordable Pricing", desc: "Flat service call-out fee with transparent pricing on parts and consumables." },
-      { title: "Fully Equipped Vans", desc: "Each response vehicle is stocked with basic fluids, fuses, and diagnostic readers." }
-    ],
-    process: [
-      { step: "01", title: "Breakdown Report", desc: "Call us and explain the issue: click sound on ignition, flat tyre, or fuel loss." },
-      { step: "02", title: "Technician Dispatched", desc: "The nearest mobile assistance rider or service van is dispatched via GPS routing." },
-      { step: "03", title: "On-Site Diagnostics", desc: "Technician arrives, inspects battery charge, tyre damage, or engine error codes." },
-      { step: "04", title: "On-The-Spot Fix", desc: "Problem is resolved (battery jump-started, tyre changed, or fuel filled)." },
-      { step: "05", title: "Test & Resume", desc: "System check to confirm vehicle is safe, and you resume your drive." }
-    ],
-    faqs: [
-      { 
-        q: "What happens if you cannot start my car on-site?", 
-        a: "If our technician cannot resolve the issue on the spot (due to mechanical failure or electronic block), we will immediately summon our flatbed tow truck to take your vehicle to a garage. You will only pay a discounted towing rate." 
-      },
-      { 
-        q: "Do you supply fuel if I run out completely?", 
-        a: "Yes, we deliver up to 5 liters of petrol or diesel in safety-compliant containers. The cost of fuel will be charged additionally at actual fuel station market rates." 
-      },
-      { 
-        q: "How long does a jump-start last?", 
-        a: "A jump-start provides enough power to start your engine. You must run the engine or drive the car for at least 30-45 minutes to let the alternator recharge the battery, or get it inspected at a shop." 
-      }
-    ],
-    reviews: [
-      { name: "Devi Prasad", rating: 5, date: "2026-07-01", vehicle: "Hyundai i20", comment: "My car battery died near Vandiyur at 11 PM. Called Annamalaiyar and their mechanic arrived in 15 minutes with a booster kit. Started in seconds! Extremely grateful.", verified: true },
-      { name: "Abhishek Jain", rating: 5, date: "2026-06-18", vehicle: "Honda Amaze", comment: "Got a double tyre puncture on the bypass road. The technician brought our spare to the shop, patched both tyres, came back, and mounted them. Lifesavers!", verified: true },
-      { name: "Meera Nair", rating: 5, date: "2026-07-14", vehicle: "Mahindra XUV300", comment: "Accidentally locked the keys inside. They unlocked the door using specialized air wedges in 5 minutes with zero scratches or glass damage.", verified: true }
-    ]
-  },
-  'heavy-commercial-recovery': {
-    title: "Heavy Commercial Recovery",
-    slug: "heavy-commercial-recovery",
-    iconName: "ShieldCheck",
-    heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1600",
-    description: "Heavy-duty recovery and towing for buses, trucks, trailers, construction vehicles, and commercial fleets. Equipped with massive wreckers to handle large vehicle towing.",
-    detailedDescription: "Towing large commercial vehicles requires massive power, heavy-duty underlifts, and specialized brake-system knowledge. Our heavy commercial recovery fleet includes heavy-duty wreckers and multi-axle tow cranes. We can safely lift and pull loaded container trucks, intercity buses, cement mixers, and industrial loaders. Our technicians are experts in coupling heavy trailers, releasing air brakes manually, and securing heavy driveshafts to guarantee safe, long-haul commercial towing. We work closely with transport fleets and logistics companies for priority highway retrieval.",
-    features: [
-      { title: "Heavy Duty Underlift Towing", desc: "Hydraulic underlifts that lift the front axle of fully loaded semi-trucks easily." },
-      { title: "Commercial Bus Recovery", desc: "Low-clearance bus towing avoiding bumper damage or chassis bend." },
-      { title: "Trailer Coupling & Tow", desc: "Connecting and towing multi-axle trailers and commercial carriers." },
-      { title: "Industrial Crane Support", desc: "Heavy crane lifts for uprighting flipped heavy vehicles or loaded containers." },
-      { title: "Pneumatic Brake Connections", desc: "Securing truck air supply to allow rolling wheels with functioning brakes." },
-      { title: "High-Tension Winches", desc: "Heavy 30-ton capacity winches to pull trucks back onto highway surfaces." },
-      { title: "Priority Fleet Partnerships", desc: "Corporate contracts with logistics providers for highway breakdowns." }
-    ],
-    gallery: [
-      { src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600", title: "Semi Truck Wrecker Tow" },
-      { src: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600", title: "Commercial Fleet Support" },
-      { src: "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&q=80&w=600", title: "30-Ton Hydraulic Crane Lift" },
-      { src: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=600", title: "Highway Bus Salvage" },
-      { src: "https://images.unsplash.com/photo-1617400324478-f75f73943bb0?auto=format&fit=crop&q=80&w=600", title: "Night Industrial Towing" }
-    ],
-    benefits: [
-      { title: "30-Ton Pull Capacity", desc: "Heavy machinery designed for high tonnage commercial towing." },
-      { title: "Chassis Protection", desc: "Spreader beams and custom anchors to prevent trailer warping." },
-      { title: "Commercial Specialists", desc: "Crew experienced in heavy-vehicle air braking systems and axle disconnects." },
-      { title: "Fast Clearance", desc: "Clearing highway blockages quickly to prevent heavy commercial losses." }
-    ],
-    process: [
-      { step: "01", title: "Specifications Log", desc: "We record vehicle length, laden weight, loaded material, and axle conditions." },
-      { step: "02", title: "Heavy Wrecker Dispatch", desc: "A heavy-duty hydraulic wrecker or mobile crane is dispatched to the scene." },
-      { step: "03", title: "Brake & Axle Setup", desc: "Crew disconnects the driveshaft and hooks air hoses to release commercial spring brakes." },
-      { step: "04", title: "Underlift Mount", desc: "Heavy hydraulic underlift is positioned under the front axle and secured." },
-      { step: "05", title: "High-Weight Transport", desc: "The commercial truck is towed to a fleet garage or commercial vehicle workshop." }
-    ],
-    faqs: [
-      { 
-        q: "Can you tow a fully loaded 12-wheeler container truck?", 
-        a: "Yes, our heavy-duty wreckers are equipped with heavy hydraulic underlifts and dual winches capable of recovering and towing loaded multi-axle commercial vehicles." 
-      },
-      { 
-        q: "How do you release air brakes on a broken-down truck before towing?", 
-        a: "Our technicians connect the recovery truck's air compressor lines to the broken truck's air system to charge the tanks and release the parking brakes. If the air system is damaged, we manually cage the brake chambers." 
-      },
-      { 
-        q: "Do you offer priority service contracts for transport companies?", 
-        a: "Yes, we partner with logistics operators and bus companies to provide priority assistance, fixed rates, and credit billing for fleet operations." 
-      }
-    ],
-    reviews: [
-      { name: "P. Rangarajan (Fleet Mgr)", rating: 5, date: "2026-06-20", vehicle: "Ashok Leyland Container Truck", comment: "One of our loaded container trucks broke down on the bypass. Annamalaiyar's crew arrived with a massive recovery truck, bypassed the brakes, and towed it safely. Saved us thousands in delay penalties.", verified: true },
-      { name: "Suresh Balan", rating: 5, date: "2026-05-14", vehicle: "Volvo Intercity Bus", comment: "Exceptional work towing our commercial bus. They protected the lower frame and glass panels completely during the hookup. Very skilled operators.", verified: true },
-      { name: "Guru Transports", rating: 5, date: "2026-07-09", vehicle: "BharatBenz Tipper", comment: "Strongest towing equipment in Madurai. Clean lift, secure chains, and fast delivery to our workshop. Highly recommend their heavy recovery team.", verified: true }
-    ]
-  },
-  'bike-scooter-towing': {
-    title: "Bike & Scooter Towing",
-    slug: "bike-scooter-towing",
-    iconName: "Bike",
-    heroImage: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=1600",
-    description: "Safe, damage-free transport for motorcycles, scooters, superbikes, electric bikes, and accident two-wheelers. Equipped with specialized wheel cradles and soft tie-down straps.",
-    detailedDescription: "Towing a motorcycle or scooter incorrectly can bend handlebars, snap clutch levers, or scratch premium paintwork. We do not use crude rope towing. Our two-wheeler towing service utilizes custom loading ramps, front-wheel lock cradles, and premium soft-fabric straps. The bike is locked in an upright position on our platform, preventing any tipping or movement during transit. This service is ideal for superbikes, gearless scooters, and electric bikes with locked rear hubs.",
-    features: [
-      { title: "Front Wheel Lock Cradle", desc: "Ensures the motorcycle stands completely vertical and stable without side-stand load." },
-      { title: "Soft Fabric Tie-Downs", desc: "Secures the chassis at triple points using soft straps to avoid chrome scratching." },
-      { title: "Low-Slope Load Ramp", desc: "Easy loading of heavy cruisers (Harleys, Royal Enfields) and low scooters." },
-      { title: "EV Two-Wheeler Support", desc: "Safely transports electric scooters with dead batteries and locked hub motors." },
-      { title: "Accident Bike Retrieval", desc: "Loading and securing of bikes with broken forks or steering blocks." },
-      { title: "Scratch-Free Guarantee", desc: "No metal-on-metal contacts; all points cushioned with industrial rubber." },
-      { title: "Double Bike Loading", desc: "Capable of transporting two bikes simultaneously for friends travelling together." }
-    ],
-    gallery: [
-      { src: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=600", title: "Superbike Locked in Position" },
-      { src: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600", title: "Premium Motorcycle Loading" },
-      { src: "https://images.unsplash.com/photo-1449490126689-09c217baa807?auto=format&fit=crop&q=80&w=600", title: "Scooter Secured in Van" },
-      { src: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=600", title: "Electric Scooter Load" },
-      { src: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=600", title: "Secure Bike Offload" }
-    ],
-    benefits: [
-      { title: "Scratch-Free Guarantee", desc: "Cushioned points and soft straps ensure zero paint rub or fork scratches." },
-      { title: "Safe Vertical Loading", desc: "No fluid leaks (petrol/coolant) since the bike is kept upright." },
-      { title: "Fast City Response", desc: "Quick dispatch of compact bike-towers through heavy city traffic." },
-      { title: "Affordable Two-Wheeler Rates", desc: "Reasonably priced local packages for scooters and commuter bikes." }
-    ],
-    process: [
-      { step: "01", title: "Details Logged", desc: "Request details: bike model (Cruiser, Superbike, Scooter) and steering status." },
-      { step: "02", title: "Bike Wrecker Dispatch", desc: "A specialized pickup or small carrier with wheel-lock mounts is dispatched." },
-      { step: "03", title: "Ramp Loading & Wheel Lock", desc: "The bike is wheeled up the ramp; front tire is locked in the vertical clamp cradle." },
-      { step: "04", title: "Soft Strapping Sequence", desc: "Cushioned straps are fastened to handle triple points, keeping suspension slightly compressed." },
-      { step: "05", title: "Safe Drop-Off", desc: "Unstrapped carefully at the workshop or home address, verifying handle alignment." }
-    ],
-    faqs: [
-      { 
-        q: "Will you tie down my bike using metal hooks or ropes?", 
-        a: "Never. We use high-tensile polyester soft loop straps that wrap around the handlebars or frame. This eliminates any risk of scratching the paint, chrome, or cracking fairings." 
-      },
-      { 
-        q: "Can you tow electric scooters like Ola, Ather, or TVS iQube?", 
-        a: "Yes. Electric scooters can have locked wheels or disabled hubs when the battery dies. We load them using our low-angled ramp platform to avoid damage to the electric drivetrain." 
-      },
-      { 
-        q: "What if the steering lock is broken or jammed?", 
-        a: "No problem. We can secure bikes even with jammed steering columns or damaged forks. We use specialized wheel dollies to load the bike onto the carrier platform safely." 
-      }
-    ],
-    reviews: [
-      { name: "Prasanna Venkatesh", rating: 5, date: "2026-07-08", vehicle: "Royal Enfield Interceptor 650", comment: "Towing a heavy twin cylinder bike is tricky. Annamalaiyar's team brought a custom wheel-cradle carrier. Loaded it upright, strapped it down, and delivered it without a single scratch. Excellent service!", verified: true },
-      { name: "Shruthi S.", rating: 5, date: "2026-06-28", vehicle: "Ola S1 Pro (EV)", comment: "My Ola scooter screen froze and wheels locked. They loaded it using a neat low ramp. Perfect electric bike towing. Very affordable too.", verified: true },
-      { name: "Dinesh Kumar", rating: 5, date: "2026-07-02", vehicle: "Kawasaki Ninja Z900", comment: "Best superbike towing in Madurai. Front wheel clamp holds the bike rock-steady. Soft straps only, no metal hooks touching the tank. Highly recommended.", verified: true }
-    ]
   }
 };
-
-

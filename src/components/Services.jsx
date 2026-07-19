@@ -5,40 +5,46 @@ import { Truck, Compass, Wrench, ShieldAlert, Bike, LifeBuoy, ArrowRight } from 
 const Services = () => {
   const serviceList = [
     {
-      slug: "flatbed-car-towing",
+      slug: "car-towing-madurai",
       icon: <Truck className="w-8 h-8" />,
-      title: "Flatbed Car Towing",
-      desc: "The safest way to transport luxury cars, automatic vehicles, and heavily damaged SUVs. Complete flatbed tray guarantees zero wear and tear on wheels."
+      title: "Car Towing in Madurai",
+      desc: "Reliable, 20-minute local towing for hatchbacks, sedans, and SUVs. Best rates in Melamadai, Mattuthavani, Anna Nagar, and all of Madurai city."
+    },
+    {
+      slug: "bike-towing-madurai",
+      icon: <Bike className="w-8 h-8" />,
+      title: "Bike Towing in Madurai",
+      desc: "Safe scratch-free motorcycle and scooter towing inside Madurai. Utilizing wheel-lock cradles and soft straps for cruisers, gearless scooters, and superbikes."
+    },
+    {
+      slug: "flatbed-towing",
+      icon: <Truck className="w-8 h-8" />,
+      title: "Flatbed Towing",
+      desc: "Hydraulic flatbeds for premium luxury cars, electric vehicles, automatic transmission cars, and low-clearance vehicles with zero wheel-to-ground contact."
     },
     {
       slug: "accident-recovery",
       icon: <LifeBuoy className="w-8 h-8" />,
-      title: "Accident & Recovery",
-      desc: "Equipped with heavy hydraulic winches and underlift lifters to recover vehicles from deep ditches, trenches, canal beds, or crash sites safely."
+      title: "Accident Recovery",
+      desc: "Emergency extraction and lifting services for crash sites, roadside ditch slips, and flooded vehicles using heavy-duty wreckers and winches."
+    },
+    {
+      slug: "roadside-assistance",
+      icon: <Wrench className="w-8 h-8" />,
+      title: "Roadside Assistance",
+      desc: "On-the-spot breakdown fixes. Jump starts for dead batteries, tyre puncture plugging, emergency fuel delivery, and car key lockout solutions."
+    },
+    {
+      slug: "heavy-vehicle-recovery",
+      icon: <ShieldAlert className="w-8 h-8" />,
+      title: "Heavy Vehicle Recovery",
+      desc: "Heavy commercial towing and salvage for loaded container trucks, intercity buses, construction loaders, trailers, and public fleet vehicles."
     },
     {
       slug: "long-distance-towing",
       icon: <Compass className="w-8 h-8" />,
       title: "Long Distance Towing",
-      desc: "Moving a car across Tamil Nadu or to a specialist workshop? We offer secured long-distance towing rates with real-time ETA tracking."
-    },
-    {
-      slug: "roadside-assistance",
-      icon: <Wrench className="w-8 h-8" />,
-      title: "24/7 Roadside Assistance",
-      desc: "On-the-spot troubleshooting for flat tires, battery drainage, out-of-fuel distress, and vehicle key lockout emergencies. Call +91 95855 87999."
-    },
-    {
-      slug: "heavy-commercial-recovery",
-      icon: <ShieldAlert className="w-8 h-8" />,
-      title: "Heavy Commercial Recovery",
-      desc: "Professional rescue, recovery, and heavy vehicle towing for trucks, public buses, utility trailers, and loaders in Melamadai, Madurai."
-    },
-    {
-      slug: "bike-scooter-towing",
-      icon: <Bike className="w-8 h-8" />,
-      title: "Bike & Scooter Towing",
-      desc: "Custom wheel mounts and strap configurations for motorcycles, superbikes, and gearless scooters. Complete safety and damage-free transit."
+      desc: "Transporting your car to another state or city across South India? We provide double-driver setups with real-time GPS tracking and transit safety."
     }
   ];
 
