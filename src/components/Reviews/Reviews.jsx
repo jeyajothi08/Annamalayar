@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { API_BASE_URL } from '../../config';
-import { Star, ShieldCheck, CheckCircle2, ChevronRight, ChevronLeft, Image as ImageIcon } from 'lucide-react';
+import { Star, CheckCircle2, ChevronRight, ChevronLeft } from 'lucide-react';
 
 const Reviews = () => {
   const { user } = useAuth();

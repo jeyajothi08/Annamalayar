@@ -1,3 +1,4 @@
+/* eslint-disable react/only-export-components */
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { API_BASE_URL } from '../config';
 

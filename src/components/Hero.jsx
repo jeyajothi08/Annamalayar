@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, ArrowRight, ShieldCheck, Clock, Award } from 'lucide-react';
+import { Phone, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   const handleScrollToServices = (e) => {

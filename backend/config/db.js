@@ -88,7 +88,7 @@ try {
   dbConnected = true;
   console.log('✅ Connected to MySQL database successfully.');
   connection.release();
-} catch (error) {
+} catch {
   console.warn('⚠️ Database connection failed. Local MySQL server is not running or credentials differ.');
   console.log('📂 Fallback Mode Activated: Using local file-based JSON database (backend/mock-data/).');
   dbConnected = false;
@@ -347,7 +347,7 @@ const pool = {
     if (dbConnected && realPool) {
       try {
         return await realPool.getConnection();
-      } catch (err) {
+      } catch {
         dbConnected = false;
       }
     }

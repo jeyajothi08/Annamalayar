@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { API_BASE_URL } from '../../config';
-import { Shield, Users, MessageSquare, Star, CheckCircle, XCircle, Trash2, Mail, Phone, Car } from 'lucide-react';
+import { Shield, Star, CheckCircle, XCircle, Trash2, Phone, Car } from 'lucide-react';
 
 const AdminDashboard = () => {
   const { admin, adminToken, loading } = useAuth();
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
   }, [admin, loading, navigate]);
 
   // Load Dashboard Data
-  const loadDashboardData = async () => {
+  const loadDashboardData = useCallback(async () => {
     if (!adminToken) return;
     setDataLoading(true);
     try {
@@ -81,13 +81,13 @@ const AdminDashboard = () => {
     } finally {
       setDataLoading(false);
     }
-  };
+  }, [adminToken]);
 
   useEffect(() => {
     if (adminToken) {
       loadDashboardData();
     }
-  }, [adminToken]);
+  }, [adminToken, loadDashboardData]);
 
   const showAlert = (type, text) => {
     setAlert({ type, text });

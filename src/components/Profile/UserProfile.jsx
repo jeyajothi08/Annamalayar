@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { API_BASE_URL } from '../../config';
-import { Star, ShieldCheck, CheckCircle2, AlertCircle, Upload, FileImage, Sparkles } from 'lucide-react';
+import { Star, CheckCircle2, AlertCircle, Upload, FileImage, Sparkles } from 'lucide-react';
 
 const UserProfile = () => {
   const { user, token, loading } = useAuth();
