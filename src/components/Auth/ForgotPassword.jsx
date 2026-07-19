@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { API_BASE_URL } from '../../config';
 import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, Key, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
+import SEO from '../SEO';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
@@ -100,6 +101,10 @@ const ForgotPassword = () => {
 
   return (
     <main className="min-h-screen flex items-center justify-center pt-24 pb-12 bg-brand-primary px-4">
+      <SEO 
+        title="Reset Password | Annamalaiyar Recovery & Towing"
+        description="Reset your customer account password for Annamalaiyar Recovery & Towing to continue booking 24/7 towing services."
+      />
       <div className="absolute inset-0 bg-linear-to-br from-accent/5 to-transparent pointer-events-none"></div>
 
       <div className="w-full max-w-md glass-panel p-8 rounded-2xl border border-white/5 relative z-10">

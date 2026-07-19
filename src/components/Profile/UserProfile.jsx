@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { API_BASE_URL } from '../../config';
 import { Star, CheckCircle2, AlertCircle, Upload, FileImage, Sparkles } from 'lucide-react';
+import SEO from '../SEO';
 
 const UserProfile = () => {
   const { user, token, loading } = useAuth();
@@ -99,6 +100,10 @@ const UserProfile = () => {
 
   return (
     <main className="min-h-screen pt-28 pb-16 bg-brand-primary px-4 md:px-8">
+      <SEO 
+        title="My Profile | Annamalaiyar Recovery & Towing"
+        description="View and update your customer account profile, review booking history, and manage roadside assistance bookings."
+      />
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         
         {/* Left Column: Account Details */}

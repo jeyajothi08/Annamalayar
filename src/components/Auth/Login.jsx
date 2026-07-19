@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { Mail, Lock, LogIn, AlertCircle } from 'lucide-react';
+import SEO from '../SEO';
 
 const Login = () => {
   const { login } = useAuth();
@@ -38,6 +39,10 @@ const Login = () => {
 
   return (
     <main className="min-h-screen flex items-center justify-center pt-24 pb-12 bg-brand-primary px-4">
+      <SEO 
+        title="Customer Login | Annamalaiyar Recovery & Towing"
+        description="Log in to your Annamalaiyar Recovery & Towing customer account to request vehicle towing or manage your roadside assistance requests."
+      />
       <div className="absolute inset-0 bg-linear-to-br from-accent/5 to-transparent pointer-events-none"></div>
       
       <div className="w-full max-w-md glass-panel p-8 rounded-2xl border border-white/5 relative z-10">

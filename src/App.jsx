@@ -22,6 +22,7 @@ import AdminLogin from './components/Admin/AdminLogin';
 import AdminDashboard from './components/Admin/AdminDashboard';
 import ServiceDetail from './components/ServiceDetail';
 import ScrollToTop from './components/ScrollToTop';
+import SEO from './components/SEO';
 
 // Import Icons
 import { Phone, MessageSquare } from 'lucide-react';
@@ -30,6 +31,10 @@ import { Phone, MessageSquare } from 'lucide-react';
 const Home = () => {
   return (
     <>
+      <SEO 
+        title="Annamalaiyar Recovery & Towing | 24/7 Car Towing Service in Madurai"
+        description="24/7 car towing, bike towing, accident recovery and roadside assistance in Madurai. Fast, reliable and professional towing services. Call +91 95855 87999."
+      />
       <Hero />
       <ContactSection />
       <Services />

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { Shield, Lock, User, LogIn, AlertCircle } from 'lucide-react';
+import SEO from '../SEO';
 
 const AdminLogin = () => {
   const { adminLogin } = useAuth();
@@ -38,6 +39,10 @@ const AdminLogin = () => {
 
   return (
     <main className="min-h-screen flex items-center justify-center pt-24 pb-12 bg-brand-primary px-4">
+      <SEO 
+        title="Admin Access | Annamalaiyar Recovery & Towing"
+        description="Authorized staff login portal for managing 24/7 towing dispatch queues, customer requests, and admin logs."
+      />
       <div className="absolute inset-0 bg-linear-to-br from-danger/5 to-transparent pointer-events-none"></div>
 
       <div className="w-full max-w-md glass-panel p-8 rounded-2xl border border-danger/10 relative z-10">

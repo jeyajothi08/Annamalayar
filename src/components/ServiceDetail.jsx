@@ -9,6 +9,7 @@ import {
   Truck, ShieldAlert, Compass, Wrench, Bike
 } from 'lucide-react';
 import { serviceData } from './serviceData';
+import SEO from './SEO';
 
 const getLucideIcon = (name, className = "w-6 h-6") => {
   switch (name) {
@@ -165,6 +166,11 @@ Details: ${formData.message || 'No additional details provided.'}`;
       exit="exit"
       variants={pageVariants}
     >
+      <SEO 
+        title={`${service.title} in Madurai | 24/7 Annamalaiyar Towing`}
+        description={`Get reliable, professional ${service.title} services in Madurai and across Tamil Nadu highways. Available 24/7. Call +91 95855 87999 for quick dispatch.`}
+        ogImage={service.heroImage}
+      />
       {/* Decorative Blur Background Graphics */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-[#F59E0B]/10 to-transparent rounded-full filter blur-[120px] pointer-events-none z-0"></div>
       <div className="absolute top-[40%] left-[-10%] w-[400px] h-[400px] bg-gradient-to-tr from-red-500/5 to-transparent rounded-full filter blur-[100px] pointer-events-none z-0"></div>

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { API_BASE_URL } from '../../config';
 import { Shield, Star, CheckCircle, XCircle, Trash2, Phone, Car } from 'lucide-react';
+import SEO from '../SEO';
 
 const AdminDashboard = () => {
   const { admin, adminToken, loading } = useAuth();
@@ -205,6 +206,10 @@ const AdminDashboard = () => {
 
   return (
     <main className="min-h-screen pt-28 pb-16 bg-brand-primary px-4 md:px-8">
+      <SEO 
+        title="Admin Dashboard | Annamalaiyar Recovery & Towing"
+        description="Manage towing service requests, reviews approval, customer details, and system settings."
+      />
       <div className="max-w-7xl mx-auto">
         
         {/* Title / Header */}
