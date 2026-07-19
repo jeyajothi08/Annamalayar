@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0a0e1a;
+  --color-brand-secondary: #131a30;
+  --color-brand-tertiary: #1b2541;
+  --color-accent: #ff9f1c;
+  --color-accent-hover: #e58f10;
+  --color-danger: #e71d36;
+  --color-danger-hover: #c91429;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0aabe;
+  --color-text-muted: #64748b;
+  
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+/* Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+  
+  body {
+    background-color: #0a0e1a; /* brand-primary */
+    color: #ffffff; /* text-primary */
+    overflow-x: hidden;
+  }
+  
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0e1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1b2541;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff9f1c;
+  }
+}
+
+/* Custom Utilities */
+.glass-panel {
+  background: rgba(19, 26, 48, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 30%, #ff9f1c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pulse animation for maps and badges */
+@keyframes soft-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(231, 29, 54, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(231, 29, 54, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(231, 29, 54, 0);
+  }
+}
+
+.animate-pulse-soft {
+  animation: soft-pulse 2s infinite;
+}
