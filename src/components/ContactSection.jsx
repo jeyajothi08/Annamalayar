@@ -37,7 +37,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-heading font-bold text-white text-lg mb-1">Our Address</h4>
                   <p className="text-text-secondary text-sm leading-relaxed">
-                    No. 18B/4, Vandiyur Main Rd, Senthurapandian Colony,<br />
+                    No. 18B/4, Vandiyur Main Rd,Shenbagathottam Colony,<br />
                     Vandiyur, Melamadai, Madurai, Tamil Nadu 625020
                   </p>
                   <p className="text-xs text-accent font-semibold mt-2">
